@@ -3,7 +3,7 @@ import Dropdown from './Dropdown';
 
 function Header() {
   return (
-    <header className="App-header">
+    <header className="app-header">
       <div className="header-content">
 
         <div className="main-dropdown-container header-column">
