@@ -2,6 +2,8 @@ import './App.css';
 import Header from './components/Header';
 import Map from './components/Map';
 import PieChart from './components/PieChart';
+import Table from './components/Table';
+import data from "./tableData.json";
 
 function App() {
   return (
@@ -32,23 +34,24 @@ function App() {
 
           <div className="pie-charts-container">
             <PieChart
-              label="Combined"
-              data={{high: 20, medium: 20, moderate: 60}}
+              label="Wildfires"
+              data={{high: 32, medium: 18, moderate: 50}}
               hidden
             />
             <PieChart
-              label="Drought risk"
-              data={{high: 40, medium: 20, moderate: 40}}
+              label="Fluvial flooding"
+              data={{high: 10, medium: 30, moderate: 60}}
             />
             <PieChart
-              label="Extreme Temperatures"
+              label="Coastal flooding"
               data={{high: 10, medium: 40, moderate: 50}}
             />
             <PieChart
-            label="Extreme Precipitation"
-            data={{high: 50, medium: 40, moderate: 10}}
+              label="Wildfires"
+              data={{high: 32, medium: 18, moderate: 50}}
             />
           </div>
+          <Table data={data}/>
         </div>
         <Map />
       </div>
