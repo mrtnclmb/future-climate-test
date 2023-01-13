@@ -6,6 +6,22 @@ import TableBody from './TableBody';
 function Table(props) {
   const [tableData, setTableData] = useState(props.data);
 
+  const handleSorting = (sortField, sortOrder) => {
+    if (sortField) {
+      const sorted = [...tableData].sort((a, b) => {
+        if (a[sortField] === null) return 1;
+        if (b[sortField] === null) return -1;
+        if (a[sortField] === null && b[sortField] === null) return 0;
+        return (
+          a[sortField].toString().localeCompare(b[sortField].toString(), "en", {
+            numeric: true,
+          }) * (sortOrder === "asc" ? 1 : -1)
+        );
+      });
+      setTableData(sorted);
+    }
+  };
+
   const columns = [
    { label: "Asset name", accessor: "asset_name" },
    { label: "Combined", accessor: "combined" },
@@ -34,7 +50,7 @@ function Table(props) {
         <Searchbox />
       </div>
       <table id="assets-table">
-        <TableHead columns={columns} />
+        <TableHead columns={columns} handleSorting={handleSorting} />
         <TableBody columns={columns} tableData={tableData || dataPlaceholder} />
       </table>
     </div>

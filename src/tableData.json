@@ -1,32 +1,32 @@
 [
   {
     "asset_name": "Olive processing plant",
-    "combined": 45.2,
-    "extreme_temperatures": 45.2,
-    "drought": 45.2,
-    "wildfires": 45.2,
-    "extreme_precipitation": 45.2,
-    "fluvial_flooding": 45.2,
-    "coastal_flooding": 45.2
+    "combined": 45,
+    "extreme_temperatures": 30,
+    "drought": 22,
+    "wildfires": 32,
+    "extreme_precipitation": 14,
+    "fluvial_flooding": 53,
+    "coastal_flooding": 23
   },
   {
-    "asset_name": "Olive processing plant",
-    "combined": 45.2,
-    "extreme_temperatures": 45.2,
-    "drought": 45.2,
-    "wildfires": 45.2,
-    "extreme_precipitation": 45.2,
-    "fluvial_flooding": 45.2,
-    "coastal_flooding": 45.2
+    "asset_name": "Olive processing plant 2",
+    "combined": 51,
+    "extreme_temperatures": 24,
+    "drought": 2,
+    "wildfires": 4,
+    "extreme_precipitation": 45,
+    "fluvial_flooding": 49,
+    "coastal_flooding": 12
   },
   {
-    "asset_name": "Olive processing plant",
-    "combined": 45.2,
-    "extreme_temperatures": 45.2,
-    "drought": 45.2,
-    "wildfires": 45.2,
-    "extreme_precipitation": 45.2,
-    "fluvial_flooding": 45.2,
-    "coastal_flooding": 45.2
+    "asset_name": "Olive processing plant 3",
+    "combined": 41,
+    "extreme_temperatures": 45,
+    "drought": 23,
+    "wildfires": 51,
+    "extreme_precipitation": 82,
+    "fluvial_flooding": 15,
+    "coastal_flooding": 52
   }
 ]

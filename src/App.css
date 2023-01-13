@@ -327,6 +327,7 @@ circle {
 #assets-table th {
   border-bottom: 1px dotted #DDD;
   padding: 10px 15px;
+  cursor: pointer;
 }
 
 #assets-table td {

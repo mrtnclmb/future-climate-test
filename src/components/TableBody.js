@@ -14,13 +14,16 @@ function TableBody({ tableData, columns }) {
         return (
           <tr key={data.id}>
             {columns.map(({ accessor }, index) => {
-              return (
-                <td key={accessor}>
-                  { index === 0 ? (data[accessor] || "——")
-                    : <span className="dot" style={{ backgroundColor: 'green'}}></span>
-                  }
-                </td>
-              )
+              {/*
+                return (
+                  <td key={accessor}>
+                    { index === 0 ? (data[accessor] || "——")
+                      : <span className="dot" style={{ backgroundColor: 'green'}}></span>
+                    }
+                  </td>
+                )
+              */}
+              return <td key={accessor}>{data[accessor] || "——"}</td>
             })}
           </tr>
         );
